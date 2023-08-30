@@ -1,8 +1,10 @@
 import React, { StrictMode } from "react";
-import AppRoutes from "./routes/AppRoutes";
 import { Provider } from "react-redux";
-import { store, persistor } from "./redux/store";
 import { PersistGate } from "redux-persist/integration/react";
+
+import ServiceWorker from "@customs/provider/ServiceWorker";
+import AppRoutes from "./routes/AppRoutes";
+import { store, persistor } from "./redux/store";
 
 import "./styles/rootStyles";
 
@@ -11,6 +13,7 @@ function App() {
     <StrictMode>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
+          <ServiceWorker />
           <AppRoutes />
         </PersistGate>
       </Provider>
