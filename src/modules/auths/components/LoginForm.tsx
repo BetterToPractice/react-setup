@@ -6,7 +6,7 @@ const LoginForm = () => {
 			<Box>
 				<input type="text"/><br />
 				<input type="text"/><br />
-				<Button />
+				<Button label="Login" />
 			</Box>
 		</div>
 	)

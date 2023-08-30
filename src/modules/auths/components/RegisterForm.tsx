@@ -6,7 +6,7 @@ const RegisterForm = () => {
 			<Box>
 				<input type="text"/><br />
 				<input type="text"/><br />
-				<Button />
+				<Button label="Register"/>
 			</Box>
 		</div>
 	)
